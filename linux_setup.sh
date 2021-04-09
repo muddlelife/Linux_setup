@@ -14,6 +14,9 @@ apt install openssh-server -y
 # 检查ssh端口是否开启
 #ps -e|grep ssh
 # 开启ssh服务
+# 确定 #PasswordAuthentication yes 默认为yes，不用修改
+# vim /etc/ssh/sshd_config  #PermitRootLogin prohibit-password 修改文 PermitRootLogin yes
+# update-rc.d ssh enable # 开机自启动
 #/etc/init.d/ssh start
 
 # 经常使用的软件

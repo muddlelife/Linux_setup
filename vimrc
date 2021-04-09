@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'connorholyday/vim-snazzy'
 call plug#end()
 color snazzy
+" 前提得安装 pip3 install jedi
 " 设置
 set ignorecase
 " 设置行号
